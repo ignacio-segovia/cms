@@ -19,8 +19,6 @@ function getWorks() {
   return fetch(
     "https://cdn.contentful.com/spaces/55xwwgra6ibw/environments/master/entries?access_token=wj23hQX26G7udtx0PWwbWwUZzSw1OSLul0y-Vpan4rw"
   )
-    .console.log(fetch)
-
     .then((res) => {
       return res.json();
     })
@@ -29,7 +27,7 @@ function getWorks() {
         return {
           title: item.fields.titulo,
           description: item.fields.descripcion,
-          image: item.fields.iamgen,
+          image: item.fields.imagen,
           url: item.fields.url,
         };
       });
