@@ -37,7 +37,7 @@ body {
   border-radius: 4px;
 }
 .portfolio-img {
-  object-fit: cover;
+  /* object-fit: cover; */
   height: 255px;
   width: 100%;
 }
