@@ -27,7 +27,7 @@ function getWorks() {
         return {
           title: item.fields.titulo,
           description: item.fields.descripcion,
-          image: item.fields.imagen,
+          image: data.includes.Asset[0].fields.file.url,
           url: item.fields.url,
         };
       });
